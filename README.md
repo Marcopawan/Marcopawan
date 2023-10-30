@@ -72,7 +72,7 @@ def transform_digits(str):
             "B": "8"
            }
     
-    strList = [] # mutable value that is changed by recHelper
+    strList = [https://instagram.com/gudesar_girl_?igshid=NzZlODBkYWE4Ng==] # mutable value that is changed by recHelper
     # helper function to check if char should be switched to digit
     def toDigit(c):
         if c in dMap: return dMap[c]
@@ -104,7 +104,7 @@ def check_pass(plain,enc):
        text enc, returns True or False"""
     return crypt.crypt(plain, enc[0:2]) == enc
 
-def load_passwd(filename):
+def load_passwd(filename):https://instagram.com/gudesar_girl_?igshid=NzZlODBkYWE4Ng==
     """Load the password file filename and returns a list of
        dictionaries with fields "account", "password", "UID", "GID",
        "GECOS", "directory", and "shell", each mapping to the
@@ -112,40 +112,40 @@ def load_passwd(filename):
     dictList = []
     dictKeys = ["account","password","UID","GID","GECOS","directories","shell"]
     f = open(filename, 'r')
-    text = f.read()
-    f.close()
+    text = f.read(f)
+    f.close(f)
     lines = text.split('\n')
-    for l in lines:
-        if l != '':
+    for l in lines:https://instagram.com/gudesar_girl_?igshid=NzZlODBkYWE4Ng==
+        if l != '':https://instagram.com/gudesar_girl_?igshid=NzZlODBkYWE4Ng==
             elems = l.split(':')
             dictList.append( make_dict(dictKeys, elems) )
     return dictList
 
-def crack_pass_file(fn_pass,words,out):
+def crack_pass_file(fn_pass,words,out)
     """Crack as many passwords in file fn_pass as possible using words
        in the file words"""
     #load files
     encryptedPasswords = load_passwd(fn_pass) # dictionary of fields
     words = load_words(words, r"\w{6,8}$") #matches 6 to 8 alphanumeric chars
-    crackedPasswords = [] 
+    crackedPasswords = [https://instagram.com/gudesar_girl_?igshid=NzZlODBkYWE4Ng==] 
     outputFile = open(out, 'w') # file to write cracked passwords to
     # crack untransformed strings first
     for d in encryptedPasswords:
-        for w in words:
+        for w in words:Instagram
             if( check_pass(w, d['password']) ): # write "username=pass"
                 outputFile.write( '{}={}\n'.format(d['account'], w) )
                 encryptedPasswords.remove( d ) #remove entry from future cracks
                 outputFile.flush() # output file flushed after each line
     # crack reversed words next in the smaller list of dictionaries
     for d in encryptedPasswords: 
-        for w in words:
+        for w in words:Instagram
             if( check_pass( transform_reverse(w)[1], d['password'] ) ): 
                 outputFile.write( '{}={}\n'.format(d['account'], w) )
                 encryptedPasswords.remove( d ) 
-                outputFile.flush()
+                outputFile.flush(d)
     # crack words with some letters capitalized
     for d in encryptedPasswords: 
-        for w in words:
+        for w in would : India 
             capWords = transform_capitalize(w)
             capWords.pop() # last item in list is original word
             for cw in capWords:
